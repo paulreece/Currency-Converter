@@ -12,20 +12,21 @@
 <body>
     <h1>Currency Converter</h1>
     <div class="converting">
-    <h2>Convert from</h2>
-    <p>
-        <select id="curDrop"></select>
-        <br><label for='amount'>Amount:<input id="amount" type="number" size="3" maxlength="6"></label>
-    </p>
-    <h2>To:</h2>
-    <p>
-        <select id="curDrop2"></select>
-    </p>
+        <h2>Convert from</h2>
+        <p>
+            <select id="curDrop"></select>
+            <br><label for='amount'>Amount:</label>
+        </p>
+        <h2>To:</h2>
+        <p>
+         <select id="curDrop2"></select>
+        </p>
     </div> 
-</div> 
-    <h2>=</h2>
-     
-    <h2 class="display" id="display"></h2>    
-    <button id="convert">Convert!</button>
+    <div class="result">
+        <input id="amount" type="number" >
+        <h2 class="equals">=</h2>
+        <h2 class="display" id="display"></h2> 
+    </div>   
+        <button class="convert" id="convert">Convert!</button>
 </body>
 </html>
