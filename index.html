@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <script src="currencies.js"></script>
     <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Currency Converter</h1>
+    <div class="converting">
     <h2>Convert from</h2>
-    <select id="curDrop"></select>
+    <p>
+        <select id="curDrop"></select>
+        <br><label for='amount'>Amount:<input id="amount" type="number" size="3" maxlength="6"></label>
+    </p>
+    <h2>To:</h2>
+    <p>
+        <select id="curDrop2"></select>
+    </p>
+    </div> 
+</div> 
     <h2>=</h2>
+     
     <h2 class="display" id="display"></h2>    
-    <button>Convert!</button>
+    <button id="convert">Convert!</button>
 </body>
 </html>
